@@ -1,0 +1,173 @@
+body{
+  height: 100%;
+}
+.cards {
+    padding: 4rem;
+    background: #fff;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .home{
+    height: calc(100vh - 100px);
+    background-image: url("../../../asset/home.jpeg");
+    background-size: cover;
+  }
+  .cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .cards__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+  
+  .cards__items {
+    margin-bottom: 24px;
+    
+  }
+  
+  .cards__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+    height: 150px ;
+    width: 100px;
+  }
+  
+  .cards__item__link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .cards__item__pic-wrap {
+    /* position: absolute; */
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+  }
+  
+  .fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+  .cards__item__pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    padding: 6px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    box-sizing: border-box;
+  }
+  
+  .cards__item__img {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    max-width: fit-content;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+    height: 110px;
+  }
+  
+  .cards__item__img:hover {
+    transform: scale(1.5);
+  }
+  
+  .cards__item__info {
+    padding: 12px;
+    width: 100%;
+    /* height: 35%; */
+  }
+  
+  .cards__item__text {
+    color: #252e48;
+    /* font-size: 18px; */
+    /* line-height: 24px; */
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 84%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .cards__items {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .cards__item {
+      margin-bottom: 2rem;
+    }
+  }
+
+.dates{
+
+  background-image :url("https://image.freepik.com/free-vector/hand-painted-background-violet-orange-colours_23-2148427578.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 8px;
+}
+
+.cartoon{
+  border: 8px double #FFFFFF;
+}
+.successVideo{
+  position: relative;
+  width: 25%;
+  height:30%;
+}
+
+.coupon{
+  position:absolute;
+  height: 40%;
+  width: 20%;
+  margin-top: 8%;
+  margin-left: 3%;
+}
+.stories {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+  font-size: 24px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.stories:hover {
+  text-decoration: underline solid rgb(68, 68, 68);
+}
+  
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
